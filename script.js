@@ -14,6 +14,7 @@ function winner() {
     for (let i = 1; i < 10; i++){
         squars[i] = document.getElementById("item" + i).innerHTML;
     }
+    // roow
     if (squars[1] == squars[2] && squars[2] == squars[3] && squars[1] !== "") {
         end(1,2,3)
     } else if (squars[4] == squars[5] && squars[5] == squars[6]&& squars[4] !== "") {
@@ -21,19 +22,20 @@ function winner() {
     } else if (squars[7] == squars[8]  &&squars[8]== squars[9] && squars[7] !== "") {
         end(7,8,9)
     }
-    else if (squars[1] == squars[4] && squars[7] && squars[1] !== "") {
+        // coolum 
+    else if (squars[1] == squars[4] && squars[4] == squars[7] && squars[1] !== "") {
         end(1,4,7)
     }
-    else if (squars[2] == squars[5] &&squars[5]== squars[8] && squars[2] !== "") {
+    else if (squars[2] == squars[5] && squars[5]== squars[8] && squars[2] !== "") {
         end(2,5,8)
     }
-    else if (squars[3] == squars[6] && squars[9] && squars[3] !== "") {a
+    else if (squars[3] == squars[6] && squars[6]== squars[9] && squars[3] !== "") {
         end(3,6,9)
     }
-    else if (squars[1] == squars[5] && squars[9] && squars[1] !== "") {
+    else if (squars[1] == squars[5] && squars[5]== squars[9] && squars[1] !== "") {
         end(1,5,9)
     }
-    else if (squars[3] == squars[5] && squars[7] && squars[3] !== "") {
+    else if (squars[3] == squars[5] &&squars[5]== squars[7] && squars[3] !== "") {
         end(3,5,7)
     }
 }
